@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sm SFNSDisplay-Regular.ttf">
+            <string>.HelveticaNeueDeskInterface-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="UcW-rX-soK">
+            <objects>
+                <pageViewController storyboardIdentifier="MBLTutorialViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="tum-2g-VD3" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19F-pe-YUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-789" y="196"/>
+        </scene>
+        <!--Tutorial Content View Controller-->
+        <scene sceneID="9wI-xv-v8Q">
+            <objects>
+                <viewController storyboardIdentifier="MBLTutorialContentViewController" id="Fnc-Yu-jrs" customClass="MBLTutorialContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Bh-3p-eYf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pdr-LY-lPq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TgD-l5-pc0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-iL-Ors">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LzG-nC-b2b">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="167" id="ULV-I5-Gme"/>
+                                            <constraint firstAttribute="width" constant="167" id="c1t-lO-ayW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kA-a1-qKs">
+                                        <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Regular" family="SFNS Display" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-cK-eQd">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Izz-gg-fjt"/>
+                                            <constraint firstAttribute="width" constant="120" id="kla-jv-vGN"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Let's go!">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="24" name=".HelveticaNeueDeskInterface-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateTutorialIcon:" destination="Fnc-Yu-jrs" eventType="touchUpInside" id="9Vi-Rq-dg8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LzG-nC-b2b" firstAttribute="top" secondItem="M9k-iL-Ors" secondAttribute="top" id="4FC-1D-LtH"/>
+                                    <constraint firstItem="Zx3-cK-eQd" firstAttribute="centerX" secondItem="M9k-iL-Ors" secondAttribute="centerX" id="ADH-Wd-sX5"/>
+                                    <constraint firstAttribute="height" constant="250" id="FZ7-O6-jBz"/>
+                                    <constraint firstItem="2kA-a1-qKs" firstAttribute="leading" secondItem="M9k-iL-Ors" secondAttribute="leading" constant="10" id="Gmv-76-v2T"/>
+                                    <constraint firstItem="Zx3-cK-eQd" firstAttribute="top" secondItem="LzG-nC-b2b" secondAttribute="bottom" constant="20" id="Nz6-dt-FRF"/>
+                                    <constraint firstAttribute="trailing" secondItem="2kA-a1-qKs" secondAttribute="trailing" constant="10" id="X1L-wA-ug3"/>
+                                    <constraint firstItem="2kA-a1-qKs" firstAttribute="top" secondItem="LzG-nC-b2b" secondAttribute="bottom" constant="20" id="tc4-0R-ppM"/>
+                                    <constraint firstItem="LzG-nC-b2b" firstAttribute="centerX" secondItem="M9k-iL-Ors" secondAttribute="centerX" id="uH3-VM-B54"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M9k-iL-Ors" firstAttribute="leading" secondItem="TgD-l5-pc0" secondAttribute="leading" constant="20" id="BAp-zt-sMg"/>
+                            <constraint firstItem="M9k-iL-Ors" firstAttribute="centerY" secondItem="TgD-l5-pc0" secondAttribute="centerY" id="S0E-Js-Cbz"/>
+                            <constraint firstAttribute="trailing" secondItem="M9k-iL-Ors" secondAttribute="trailing" constant="20" id="ge8-Hk-0e2"/>
+                            <constraint firstItem="M9k-iL-Ors" firstAttribute="centerX" secondItem="TgD-l5-pc0" secondAttribute="centerX" id="sq5-e7-zlz"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="tutorialButton" destination="Zx3-cK-eQd" id="Ggn-2X-XMh"/>
+                        <outlet property="tutorialIcon" destination="LzG-nC-b2b" id="NSC-X2-oJT"/>
+                        <outlet property="tutorialLabel" destination="2kA-a1-qKs" id="B9A-mh-xmT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Av-KG-Ef4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="195"/>
+        </scene>
+    </scenes>
+</document>

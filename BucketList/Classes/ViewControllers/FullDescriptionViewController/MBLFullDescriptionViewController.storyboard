@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sm SFNSDisplay-Regular.ttf">
+            <string>.HelveticaNeueDeskInterface-Regular</string>
+        </array>
+        <array key="sm SFNSDisplay-Thin.ttf">
+            <string>.HelveticaNeueDeskInterface-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Full Description View Controller-->
+        <scene sceneID="1go-3h-GKD">
+            <objects>
+                <viewController storyboardIdentifier="MBLFullDescriptionViewController" automaticallyAdjustsScrollViewInsets="NO" id="cRd-K3-y6W" customClass="MBLFullDescriptionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0U5-9Z-OIG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9zl-sc-lpr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Te-iJ-XjA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKo-E2-zRj">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fq-YM-nLu" userLabel="Content view">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KV-Xo-pTC" userLabel="Title">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Regular" family="SFNS Display" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pN-Wb-1ID" userLabel="Date">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="17"/>
+                                                <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFL-2R-Xyu" userLabel="Description">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B43-WK-RLX">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mm7-Yr-mHI"/>
+                                                    <constraint firstAttribute="width" constant="50" id="oml-TQ-5lu"/>
+                                                </constraints>
+                                                <state key="normal" image="twitter"/>
+                                                <connections>
+                                                    <action selector="onClickShareViaTwitter:" destination="cRd-K3-y6W" eventType="touchUpInside" id="hnW-iD-33V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-0z-j3n">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="E76-An-7fM"/>
+                                                    <constraint firstAttribute="height" constant="50" id="oLy-Lh-fu6"/>
+                                                </constraints>
+                                                <state key="normal" image="fb"/>
+                                                <connections>
+                                                    <action selector="onClickShareViaFB:" destination="cRd-K3-y6W" eventType="touchUpInside" id="vz6-E8-ltT"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share via" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYC-eT-0VX">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ANN-1D-IBY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugL-0t-9U9">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="mqo-RP-M9T"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="22"/>
+                                                <state key="normal" title="Mark as done">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickMarkAsDone:" destination="cRd-K3-y6W" eventType="touchUpInside" id="sh4-NI-QFv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="2KV-Xo-pTC" firstAttribute="leading" secondItem="6Fq-YM-nLu" secondAttribute="leading" constant="12" id="0Mm-Wp-t7F"/>
+                                            <constraint firstAttribute="trailing" secondItem="5pN-Wb-1ID" secondAttribute="trailing" constant="12" id="6tT-ds-qOF"/>
+                                            <constraint firstAttribute="trailing" secondItem="ugL-0t-9U9" secondAttribute="trailing" constant="12" id="6wO-sh-c43"/>
+                                            <constraint firstItem="KFL-2R-Xyu" firstAttribute="leading" secondItem="6Fq-YM-nLu" secondAttribute="leading" constant="12" id="F9g-dt-DgC"/>
+                                            <constraint firstItem="B43-WK-RLX" firstAttribute="leading" secondItem="IUw-0z-j3n" secondAttribute="trailing" constant="12" id="GxS-Be-DFe"/>
+                                            <constraint firstAttribute="trailing" secondItem="2KV-Xo-pTC" secondAttribute="trailing" constant="12" id="JzV-Id-UF1"/>
+                                            <constraint firstItem="IYC-eT-0VX" firstAttribute="leading" secondItem="6Fq-YM-nLu" secondAttribute="leading" constant="12" id="KIt-Ly-fSl"/>
+                                            <constraint firstItem="ugL-0t-9U9" firstAttribute="top" secondItem="IYC-eT-0VX" secondAttribute="bottom" constant="12" id="XuN-wc-iD9"/>
+                                            <constraint firstAttribute="trailing" secondItem="KFL-2R-Xyu" secondAttribute="trailing" constant="12" id="auU-dn-81R"/>
+                                            <constraint firstAttribute="bottom" secondItem="ugL-0t-9U9" secondAttribute="bottom" constant="12" id="awG-2D-bZ9"/>
+                                            <constraint firstItem="IUw-0z-j3n" firstAttribute="top" secondItem="KFL-2R-Xyu" secondAttribute="bottom" constant="12" id="cmJ-KV-QaY"/>
+                                            <constraint firstItem="2KV-Xo-pTC" firstAttribute="top" secondItem="6Fq-YM-nLu" secondAttribute="top" constant="12" id="dW1-Yk-6Ri"/>
+                                            <constraint firstItem="ugL-0t-9U9" firstAttribute="leading" secondItem="6Fq-YM-nLu" secondAttribute="leading" constant="12" id="e3Q-Vx-gBq"/>
+                                            <constraint firstItem="IUw-0z-j3n" firstAttribute="leading" secondItem="IYC-eT-0VX" secondAttribute="trailing" constant="12" id="fyA-fz-5w5"/>
+                                            <constraint firstItem="5pN-Wb-1ID" firstAttribute="leading" secondItem="6Fq-YM-nLu" secondAttribute="leading" constant="12" id="nvX-ZX-3FO"/>
+                                            <constraint firstAttribute="trailing" secondItem="B43-WK-RLX" secondAttribute="trailing" constant="12" id="oA2-Fn-Mbt"/>
+                                            <constraint firstItem="5pN-Wb-1ID" firstAttribute="top" secondItem="2KV-Xo-pTC" secondAttribute="bottom" constant="12" id="t4P-ix-KEz"/>
+                                            <constraint firstItem="KFL-2R-Xyu" firstAttribute="top" secondItem="5pN-Wb-1ID" secondAttribute="bottom" constant="12" id="vTU-tD-y9G"/>
+                                            <constraint firstItem="IYC-eT-0VX" firstAttribute="top" secondItem="KFL-2R-Xyu" secondAttribute="bottom" constant="12" id="xgU-iW-5ei"/>
+                                            <constraint firstItem="B43-WK-RLX" firstAttribute="top" secondItem="KFL-2R-Xyu" secondAttribute="bottom" constant="12" id="yQw-Ju-518"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6Fq-YM-nLu" secondAttribute="trailing" id="9Ci-6D-FRe"/>
+                                    <constraint firstItem="6Fq-YM-nLu" firstAttribute="leading" secondItem="lKo-E2-zRj" secondAttribute="leading" id="DSM-nm-VfV"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Fq-YM-nLu" secondAttribute="bottom" id="KUM-WG-esx"/>
+                                    <constraint firstItem="6Fq-YM-nLu" firstAttribute="top" secondItem="lKo-E2-zRj" secondAttribute="top" id="tJp-bO-1As"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lKo-E2-zRj" firstAttribute="top" secondItem="0U5-9Z-OIG" secondAttribute="bottom" id="90K-Mx-ppX"/>
+                            <constraint firstItem="6Fq-YM-nLu" firstAttribute="width" secondItem="9Te-iJ-XjA" secondAttribute="width" id="Bbi-xv-tqn"/>
+                            <constraint firstAttribute="trailing" secondItem="lKo-E2-zRj" secondAttribute="trailing" id="DTL-dT-tIx"/>
+                            <constraint firstItem="lKo-E2-zRj" firstAttribute="leading" secondItem="9Te-iJ-XjA" secondAttribute="leading" id="M61-bo-hlL"/>
+                            <constraint firstItem="9zl-sc-lpr" firstAttribute="top" secondItem="lKo-E2-zRj" secondAttribute="bottom" id="y4Q-ux-Rf8"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="itemDate" destination="5pN-Wb-1ID" id="kIc-aB-lHN"/>
+                        <outlet property="itemDescription" destination="KFL-2R-Xyu" id="wzY-O8-k0E"/>
+                        <outlet property="itemTitle" destination="2KV-Xo-pTC" id="h14-ke-BoL"/>
+                        <outlet property="markAsDoneButton" destination="ugL-0t-9U9" id="Xv0-cI-mJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9g-zZ-gaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-677" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb" width="457" height="447"/>
+        <image name="twitter" width="441" height="441"/>
+    </resources>
+</document>

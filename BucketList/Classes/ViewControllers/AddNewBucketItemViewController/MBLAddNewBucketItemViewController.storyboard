@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sm SFNSDisplay-Thin.ttf">
+            <string>.HelveticaNeueDeskInterface-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add New Bucket Item View Controller-->
+        <scene sceneID="7Rq-vU-XeF">
+            <objects>
+                <viewController storyboardIdentifier="MBLAddNewBucketItemViewController" automaticallyAdjustsScrollViewInsets="NO" id="5tQ-IR-2dZ" customClass="MBLAddNewBucketItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lt-UF-4Eb"/>
+                        <viewControllerLayoutGuide type="bottom" id="KvC-9Q-Zjm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="glK-K1-0hE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-iT-ozs">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Te-1p-F9a" userLabel="Content view">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2m-Co-dzc">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-nz-FIf">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FZ-ju-xYq">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vi-p8-pZa">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="KtG-sq-7GV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffW-HU-EyV">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDV-dq-aAY">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="5tq-4T-X0g"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="499330974.51363599">
+                                                    <!--2016-10-28 07:02:54 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dza-Qp-D22" userLabel="Completed">
+                                                <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Thin" family="SFNS Display" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zq3-SU-q4C">
+                                                <color key="thumbTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="b2m-Co-dzc" firstAttribute="top" secondItem="9Te-1p-F9a" secondAttribute="top" constant="12" id="1IM-Dz-y6L"/>
+                                            <constraint firstAttribute="trailing" secondItem="ffW-HU-EyV" secondAttribute="trailing" constant="12" id="ETz-5D-b1s"/>
+                                            <constraint firstAttribute="trailing" secondItem="2vi-p8-pZa" secondAttribute="trailing" constant="12" id="GSM-p1-6L1"/>
+                                            <constraint firstItem="UcW-nz-FIf" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="Gq1-ny-mex"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zq3-SU-q4C" secondAttribute="bottom" constant="12" id="Hlq-ip-c8D"/>
+                                            <constraint firstAttribute="trailing" secondItem="UcW-nz-FIf" secondAttribute="trailing" constant="12" id="JDu-1H-0Iq"/>
+                                            <constraint firstItem="UcW-nz-FIf" firstAttribute="top" secondItem="b2m-Co-dzc" secondAttribute="bottom" constant="12" id="K3q-wK-0xz"/>
+                                            <constraint firstItem="ffW-HU-EyV" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="LZ2-Na-SaI"/>
+                                            <constraint firstItem="ffW-HU-EyV" firstAttribute="top" secondItem="2vi-p8-pZa" secondAttribute="bottom" constant="12" id="PFz-TW-3nu"/>
+                                            <constraint firstItem="2vi-p8-pZa" firstAttribute="top" secondItem="7FZ-ju-xYq" secondAttribute="bottom" constant="12" id="TfN-Vp-gBw"/>
+                                            <constraint firstItem="Zq3-SU-q4C" firstAttribute="top" secondItem="sDV-dq-aAY" secondAttribute="bottom" constant="12" id="VUt-lG-fV5"/>
+                                            <constraint firstItem="7FZ-ju-xYq" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="Zlj-eo-3yl"/>
+                                            <constraint firstItem="7FZ-ju-xYq" firstAttribute="top" secondItem="UcW-nz-FIf" secondAttribute="bottom" constant="12" id="Zro-Ck-EFe"/>
+                                            <constraint firstItem="2vi-p8-pZa" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="aOa-HE-ZFH"/>
+                                            <constraint firstAttribute="bottom" secondItem="dza-Qp-D22" secondAttribute="bottom" constant="12" id="cPA-ag-YaI"/>
+                                            <constraint firstItem="dza-Qp-D22" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="ecM-hj-Vl9"/>
+                                            <constraint firstItem="sDV-dq-aAY" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="g5a-cG-weE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zq3-SU-q4C" secondAttribute="trailing" constant="12" id="hCs-Nl-6Gf"/>
+                                            <constraint firstItem="Zq3-SU-q4C" firstAttribute="leading" secondItem="dza-Qp-D22" secondAttribute="trailing" constant="12" id="mDm-Kv-bZT"/>
+                                            <constraint firstItem="sDV-dq-aAY" firstAttribute="top" secondItem="ffW-HU-EyV" secondAttribute="bottom" constant="12" id="r7R-nG-F9Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="sDV-dq-aAY" secondAttribute="trailing" constant="12" id="sds-Kc-TRw"/>
+                                            <constraint firstItem="b2m-Co-dzc" firstAttribute="leading" secondItem="9Te-1p-F9a" secondAttribute="leading" constant="12" id="sko-R1-E1O"/>
+                                            <constraint firstAttribute="trailing" secondItem="b2m-Co-dzc" secondAttribute="trailing" constant="12" id="xFi-sE-MKv"/>
+                                            <constraint firstItem="dza-Qp-D22" firstAttribute="top" secondItem="sDV-dq-aAY" secondAttribute="bottom" constant="12" id="xrE-zh-ylh"/>
+                                            <constraint firstAttribute="trailing" secondItem="7FZ-ju-xYq" secondAttribute="trailing" constant="12" id="ykb-Za-YNl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9Te-1p-F9a" secondAttribute="trailing" id="Bd0-em-RrY"/>
+                                    <constraint firstItem="9Te-1p-F9a" firstAttribute="top" secondItem="YRM-iT-ozs" secondAttribute="top" id="g7o-wF-uLM"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Te-1p-F9a" secondAttribute="bottom" id="guP-rK-Xno"/>
+                                    <constraint firstItem="9Te-1p-F9a" firstAttribute="leading" secondItem="YRM-iT-ozs" secondAttribute="leading" id="isG-Rj-KrX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRM-iT-ozs" firstAttribute="leading" secondItem="glK-K1-0hE" secondAttribute="leading" id="2GU-bk-j3y"/>
+                            <constraint firstItem="KvC-9Q-Zjm" firstAttribute="top" secondItem="YRM-iT-ozs" secondAttribute="bottom" id="Rvl-09-Jpm"/>
+                            <constraint firstAttribute="trailing" secondItem="YRM-iT-ozs" secondAttribute="trailing" id="gBY-ue-UnP"/>
+                            <constraint firstItem="YRM-iT-ozs" firstAttribute="top" secondItem="2lt-UF-4Eb" secondAttribute="bottom" id="hPE-ja-Kt3"/>
+                            <constraint firstItem="9Te-1p-F9a" firstAttribute="width" secondItem="glK-K1-0hE" secondAttribute="width" id="ne4-id-jnh"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="completeItemSwitch" destination="Zq3-SU-q4C" id="cIG-21-gVJ"/>
+                        <outlet property="itemDatePicker" destination="sDV-dq-aAY" id="V9R-QP-BPV"/>
+                        <outlet property="itemDescription" destination="2vi-p8-pZa" id="c52-K8-gZ9"/>
+                        <outlet property="itemTitle" destination="UcW-nz-FIf" id="So6-Xn-6Sr"/>
+                        <outlet property="scrollView" destination="YRM-iT-ozs" id="XpN-x9-WNx"/>
+                        <outlet property="scrollViewBottomConstraint" destination="Rvl-09-Jpm" id="FXl-Sa-315"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klu-wr-uO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1170" y="-1041"/>
+        </scene>
+    </scenes>
+</document>
